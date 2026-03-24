@@ -17,9 +17,35 @@ To write a Python program using Pandas to **join two DataFrames along rows** (ro
 ---
 
 ## 💻 Program
+~~~
+# Program to join two DataFrames row-wise
 
-Add code here
+import pandas as pd
 
+# First DataFrame
+student_data1 = {
+    'name': ['Anil', 'Bala'],
+    'marks': [85, 90]
+}
+
+df1 = pd.DataFrame(student_data1)
+
+# Second DataFrame
+student_data2 = {
+    'name': ['Charan', 'Divya'],
+    'marks': [78, 92]
+}
+
+df2 = pd.DataFrame(student_data2)
+
+# Concatenate DataFrames
+df = pd.concat([df1, df2], axis=0)
+
+# Display result
+print(df)
+~~~
 ## Output
+<img width="411" height="299" alt="Screenshot 2026-03-24 144346" src="https://github.com/user-attachments/assets/315335c6-1a33-439d-bdc3-b95764b7cfbf" />
 
 ## Result
+Thus, the Python program to join two DataFrames along rows using Pandas was successfully executed and verified.
